@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import cn.stylefeng.guns.modular.system.model.Creditinfo;
 import cn.stylefeng.guns.modular.business.service.ICreditinfoService;
 
+import java.util.HashMap;
+
 /**
  * 信用信息控制器
  *
@@ -60,7 +62,9 @@ public class CreditinfoController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     public Object list(String condition) {
-        return creditinfoService.selectList(null);
+        HashMap<String,Object> mapParam = new HashMap<String,Object>();
+        mapParam.put("condition",condition);
+        return creditinfoService.selectCustomerList(mapParam);
     }
 
     /**

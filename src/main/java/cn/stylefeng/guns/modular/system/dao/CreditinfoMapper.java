@@ -2,6 +2,11 @@ package cn.stylefeng.guns.modular.system.dao;
 
 import cn.stylefeng.guns.modular.system.model.Creditinfo;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -12,5 +17,5 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @since 2020-01-16
  */
 public interface CreditinfoMapper extends BaseMapper<Creditinfo> {
-
+    List<Creditinfo> selectCreditList( @Param("item") HashMap<String, Object> mapParam);
 }

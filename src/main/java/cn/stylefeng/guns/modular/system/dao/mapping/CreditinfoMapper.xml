@@ -31,5 +31,15 @@
     <sql id="Base_Column_List">
         id, qiyename, jingyingstatus, faren, zhucejiben, createtime, provice, city, tel, moretel, email, xinyongcode, nashuicode, zhucecode, zhuzhijigoucode, canbaonumber, qiyetype, hangye, site, qiyedizhi, jingyingfanwei
     </sql>
+    <select id="selectCreditList" resultType="cn.stylefeng.guns.modular.system.model.Creditinfo" parameterType="map">
+        select <include refid="Base_Column_List" />
+        from creditinfo
+        where 1 = 1
+        <if test="item.condition != null and item.condition != ''">
+            and (qiyename like '%'||#{item.condition}||'%')
+        </if>
+        order by createtime desc
+    </select>
+
 
 </mapper>
