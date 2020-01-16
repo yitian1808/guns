@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.system.dao.CreditinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.system.model.Creditinfo">
+        <id column="id" property="id" />
+        <result column="qiyename" property="qiyename" />
+        <result column="jingyingstatus" property="jingyingstatus" />
+        <result column="faren" property="faren" />
+        <result column="zhucejiben" property="zhucejiben" />
+        <result column="createtime" property="createtime" />
+        <result column="provice" property="provice" />
+        <result column="city" property="city" />
+        <result column="tel" property="tel" />
+        <result column="moretel" property="moretel" />
+        <result column="email" property="email" />
+        <result column="xinyongcode" property="xinyongcode" />
+        <result column="nashuicode" property="nashuicode" />
+        <result column="zhucecode" property="zhucecode" />
+        <result column="zhuzhijigoucode" property="zhuzhijigoucode" />
+        <result column="canbaonumber" property="canbaonumber" />
+        <result column="qiyetype" property="qiyetype" />
+        <result column="hangye" property="hangye" />
+        <result column="site" property="site" />
+        <result column="qiyedizhi" property="qiyedizhi" />
+        <result column="jingyingfanwei" property="jingyingfanwei" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, qiyename, jingyingstatus, faren, zhucejiben, createtime, provice, city, tel, moretel, email, xinyongcode, nashuicode, zhucecode, zhuzhijigoucode, canbaonumber, qiyetype, hangye, site, qiyedizhi, jingyingfanwei
+    </sql>
+
+</mapper>
