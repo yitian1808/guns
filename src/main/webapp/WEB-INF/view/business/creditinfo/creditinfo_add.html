@@ -1,0 +1,46 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键id" underline="true"/>
+                            <#input id="qiyename" name="企业名称" underline="true"/>
+                            <#input id="jingyingstatus" name="经营状态" underline="true"/>
+                            <#input id="faren" name="法定代表人" underline="true"/>
+                            <#input id="zhucejiben" name="注册资本" underline="true"/>
+                            <#input id="createtime" name="成立日期" underline="true"/>
+                            <#input id="provice" name="所属省份" underline="true"/>
+                            <#input id="city" name="所属城市" underline="true"/>
+                            <#input id="tel" name="电话" underline="true"/>
+                            <#input id="moretel" name="更多电话" underline="true"/>
+                            <#input id="email" name="邮箱"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="xinyongcode" name="统一社会信用代码" underline="true"/>
+                            <#input id="nashuicode" name="纳税人识别号" underline="true"/>
+                            <#input id="zhucecode" name="注册号" underline="true"/>
+                            <#input id="zhuzhijigoucode" name="组织机构代码" underline="true"/>
+                            <#input id="canbaonumber" name="参保人數" underline="true"/>
+                            <#input id="qiyetype" name="企业类型" underline="true"/>
+                            <#input id="hangye" name="所属行业" underline="true"/>
+                            <#input id="site" name="网址" underline="true"/>
+                            <#input id="qiyedizhi" name="企业地址" underline="true"/>
+                            <#input id="jingyingfanwei" name="经营范围" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="CreditinfoInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="CreditinfoInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/business/creditinfo/creditinfo_info.js"></script>
+@}

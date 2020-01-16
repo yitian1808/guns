@@ -1,0 +1,46 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="主键id" value="${item.id}" underline="true"/>
+                            <#input id="qiyename" name="企业名称" value="${item.qiyename}" underline="true"/>
+                            <#input id="jingyingstatus" name="经营状态" value="${item.jingyingstatus}" underline="true"/>
+                            <#input id="faren" name="法定代表人" value="${item.faren}" underline="true"/>
+                            <#input id="zhucejiben" name="注册资本" value="${item.zhucejiben}" underline="true"/>
+                            <#input id="createtime" name="成立日期" value="${item.createtime}" underline="true"/>
+                            <#input id="provice" name="所属省份" value="${item.provice}" underline="true"/>
+                            <#input id="city" name="所属城市" value="${item.city}" underline="true"/>
+                            <#input id="tel" name="电话" value="${item.tel}" underline="true"/>
+                            <#input id="moretel" name="更多电话" value="${item.moretel}" underline="true"/>
+                            <#input id="email" name="邮箱" value="${item.email}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="xinyongcode" name="统一社会信用代码" value="${item.xinyongcode}" underline="true"/>
+                            <#input id="nashuicode" name="纳税人识别号" value="${item.nashuicode}" underline="true"/>
+                            <#input id="zhucecode" name="注册号" value="${item.zhucecode}" underline="true"/>
+                            <#input id="zhuzhijigoucode" name="组织机构代码" value="${item.zhuzhijigoucode}" underline="true"/>
+                            <#input id="canbaonumber" name="参保人數" value="${item.canbaonumber}" underline="true"/>
+                            <#input id="qiyetype" name="企业类型" value="${item.qiyetype}" underline="true"/>
+                            <#input id="hangye" name="所属行业" value="${item.hangye}" underline="true"/>
+                            <#input id="site" name="网址" value="${item.site}" underline="true"/>
+                            <#input id="qiyedizhi" name="企业地址" value="${item.qiyedizhi}" underline="true"/>
+                            <#input id="jingyingfanwei" name="经营范围" value="${item.jingyingfanwei}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="CreditinfoInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="CreditinfoInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/business/creditinfo/creditinfo_info.js"></script>
+@}
