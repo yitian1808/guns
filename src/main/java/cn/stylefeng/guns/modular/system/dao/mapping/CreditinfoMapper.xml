@@ -36,8 +36,8 @@
         from creditinfo
         where 1 = 1
         <if test="item.condition != null and item.condition != ''">
-            and (qiyename like '%'||#{item.condition}||'%')
-        </if>
+            AND qiyename like CONCAT('%',#{item.condition},'%')
+    </if>
         order by createtime desc
     </select>
 
