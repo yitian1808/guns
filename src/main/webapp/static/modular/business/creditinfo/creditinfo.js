@@ -67,6 +67,7 @@ Creditinfo.openAddCreditinfo = function () {
     this.layerIndex = index;
 };
 
+
 /**
  * 打开查看信用信息详情
  */
